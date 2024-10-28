@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-1: #f5f7f8; /* Light grayish white */
+    --color-2: #f4ce14; /* Yellow */
+    --color-3: #379777; /* Green */
+    --color-4: #474547; /* Dark gray */
+}
+
+html, body {
+    scroll-behavior: smooth;
+    min-height: 100vh; /* Avoid white space at the bottom */
+}
+
+body {
+    padding-top: 100px; /* Space for fixed navbar */
+}
+
+.title {
+    font-size: 4rem; /* Set a fixed font size */
+    color: var(--color-1);
+    display: flex;
+    text-align: center;
+    padding-top: 200px; /* Retain original padding-top */
+}
+
+.typing {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: var(--color-3);
+    padding: 35px; /* Set padding to create space */
+    min-height: 300px; /* Minimum height for the box */
+}
+
+.mypic {
+    width: 600px; /* Default image size */
+}
+
+.box2 {
+    background-color: var(--color-2);
+    padding: 40px; /* Set padding to create space */
+    min-height: 200px; /* Minimum height for the box */
+    color: #000; /* Text color for readability */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) { /* Tablets and smaller PCs */
+    .mypic {
+        width: 500px; /* Adjust image size for tablets */
+    }
+    .title {
+        font-size: 3rem; /* Adjust title font size */
+    }
+}
+
+@media screen and (max-width: 992px) { /* iPads and smaller devices */
+    .mypic {
+        width: 400px; /* Adjust image size for iPads */
+    }
+    .title {
+        font-size: 2.5rem; /* Adjust title font size */
+        padding-top: 200px; /* Retain original padding-top */
+    }
+    .box1 {
+        padding: 20px; /* Adjust padding for box1 */
+        min-height: 250px; /* Minimum height for the box */
+    }
+}
+
+@media screen and (max-width: 768px) { /* Mobile devices */
+    .mypic {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Max width for mobile */
+    }
+    .title {
+        font-size: 2rem; /* Further adjust title font size */
+        padding-top: 30px; /* Retain original padding-top */
+    }
+    .box1 {
+        padding: 10px; /* Adjust padding for box1 */
+        min-height: 200px; /* Minimum height for the box */
+    }
+    .nav-link {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+/* Navbar adjustments */
+.navbar {
+    background-color: var(--color-4);
+}
+
+.navbar-nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+}
+
+.nav-item {
+    line-height: 60px; /* Adjust spacing for smaller screens */
+}
+
+.logoMain {
+    transition: transform 0.2s ease-in-out;
+}
+
+.logoMain:hover {
+    transform: scale(1.2);
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-3);
+}
+
+.nav-link:hover {
+    transition: all 0.3s ease;
+    font-size: 25px; /* Enlarge text on hover */
+}
