@@ -450,7 +450,13 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.certificate{
+    transition: transform 0.3s, background-color 0.3s;
+}
 
+.certificate:hover {
+    transform: scale(1.1);
+}
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 1300px) {
 
