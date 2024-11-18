@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attachai Portfolio</title>
-
+    <link rel="icon" href=
+    "assests/img/logo.png">
     <link rel="stylesheet" href="CSS/homepage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -65,10 +66,10 @@
                         <a class="nav-link mx-3 active" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 active" href="#">Skills</a>
+                        <a class="nav-link mx-3 active" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 active" href="#">Contacts</a>
+                        <a class="nav-link mx-3 active" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -348,8 +349,11 @@
                     </div>
 
                 </div>
+                <div id="skills"></div>
             </div>
+            
         </div>
+        
     </div>
 
 
@@ -361,116 +365,129 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    
     <div class="box5">
-        <div class="skills-header">ทักษะและความสามารถ</div>
-
-        <div class="category">
-            <h3>การพัฒนาเว็บไซต์และโปรแกรม</h3>
-            <div class="skills-container">
-                <span class="skill"><i class="fa-brands fa-html5"></i> HTML</span>
-                <span class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
-                <span class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                <span class="skill"><i class="fab fa-php"></i> PHP</span>
+        <div class="row">
+            <!-- ฝั่งซ้าย: ทักษะและความสามารถ -->
+            <div class="col-md-6">
+                <div class="skills-header" data-aos="fade-up">ทักษะและความสามารถ</div>
+    
+                <div class="category" data-aos="fade-right">
+                    <h3>การพัฒนาเว็บไซต์และโปรแกรม</h3>
+                    <div class="skills-container">
+                        <span class="skill"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill"><i class="fab fa-php"></i> PHP</span>
+                    </div>
+                </div>
+    
+                <div class="category" data-aos="fade-left">
+                    <h3>การพัฒนาแอปพลิเคชัน</h3>
+                    <div class="skills-container">
+                        <span class="skill"><i class="fa-brands fa-flutter"></i> Flutter</span>
+                    </div>
+                </div>
+    
+                <div class="category" data-aos="fade-right">
+                    <h3>การออกแบบและกราฟิก</h3>
+                    <div class="skills-container">
+                        <span class="skill"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="skill"><i class="fab fa-adobe"></i> Adobe Photoshop</span>
+                        <span class="skill"><i class="fab fa-adobe"></i> Adobe Premiere Pro</span>
+                    </div>
+                </div>
+    
+                <div class="category" data-aos="fade-left">
+                    <h3>ทักษะการใช้โปรแกรมสำนักงาน</h3>
+                    <div class="skills-container">
+                        <span class="skill">Microsoft Office Specialist Associate (365/2019)</span>
+                    </div>
+                </div>
+    
+                <div class="category" data-aos="fade-right">
+                    <h3>การใช้เครื่องมือ AI</h3>
+                    <div class="skills-container">
+                        <span class="skill">ChatGPT</span>
+                        <span class="skill">Copilot</span>
+                        <span class="skill">Gemini</span>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="category">
-            <h3>การพัฒนาแอปพลิเคชัน</h3>
-            <div class="skills-container">
-                <span class="skill"><i class="fa-brands fa-flutter"></i> Flutter</span>
-            </div>
-        </div>
-
-        <div class="category">
-            <h3>การออกแบบและกราฟิก</h3>
-            <div class="skills-container">
-                <span class="skill"><i class="fab fa-figma"></i> Figma</span>
-                <span class="skill"><i class="fab fa-adobe"></i> Adobe Photoshop</span>
-                <span class="skill"><i class="fab fa-adobe"></i> Adobe Premiere Pro</span>
-            </div>
-        </div>
-
-        <div class="category">
-            <h3>ทักษะการใช้โปรแกรมสำนักงาน</h3>
-            <div class="skills-container">
-                <span class="skill">Microsoft Office Specialist Associate (365/2019)</span>
-            </div>
-        </div>
-
-        <div class="category">
-            <h3>การใช้เครื่องมือ AI</h3>
-            <div class="skills-container">
-                <span class="skill">ChatGPT</span>
-                <span class="skill">Copilot</span>
-                <span class="skill">Gemini</span>
+    
+            <!-- ฝั่งขวา: ใบประกาศ -->
+            <div class="col-md-6">
+                <div class="certificate-header" data-aos="fade-up">
+                    <div class="skills-header" data-aos="fade-up">ใบประกาศ</div>
+                </div>
+                <div class="certificate-container" data-aos="fade-left">
+                    <!-- ปุ่มเดียวที่ลิงก์ไปยังหน้าของใบประกาศทั้งหมด -->
+                    <a href="Certificate.html" target="_blank" class="btn btn-primary">ใบประกาศ</a>
+                </div>
             </div>
         </div>
     </div>
-
+        
+    
 
 
     <div class="box6">
-        <div class="contact-header">ติดต่อฉัน</div>
-
+        <div class="contact-header" data-aos="fade-up">ติดต่อฉัน</div>
+    
         <div class="row">
-            <!-- ส่วนข้อมูลติดต่อ -->
-
-            <!-- แบบฟอร์มติดต่อ -->
-            <div class="col-md-6 contact-form">
+            <div class="col-md-6 contact-form" data-aos="fade-right">
                 <h3>แบบฟอร์มติดต่อ</h3>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key"
-                        value="b9959748-a899-4c5d-b8cc-03f9a8c9bcd6">
+                <form action="https://api.web3forms.com/submit" method="POST" style="margin-bottom: 20px;">
+                    <input type="hidden" name="access_key" value="b9959748-a899-4c5d-b8cc-03f9a8c9bcd6">
                     <div class="mb-3">
                         <label for="name" class="form-label">ชื่อ:</label>
                         <input type="text" id="name" name="name" class="form-control" required>
                     </div>
-
+    
                     <div class="mb-3">
                         <label for="email" class="form-label">อีเมล:</label>
                         <input type="email" id="email" name="email" class="form-control" required>
                     </div>
-
+    
                     <div class="mb-3">
                         <label for="message" class="form-label">ข้อความ:</label>
                         <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
                     </div>
-
+    
                     <button type="submit" class="btn btn-warning">ส่งข้อความ</button>
                 </form>
             </div>
-            <div class="col-md-6 contact-info">
+    
+            <div class="col-md-6 contact-info" data-aos="fade-left">
                 <div class="info-item">
                     <i class="fa-solid fa-phone"></i>
-                    <p>เบอร์โทร: +66 123 456 789</p>
+                    <p>เบอร์โทร: 099 327 1546</p>
                 </div>
                 <div class="info-item">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>อีเมล: example@email.com</p>
+                    <p>อีเมล: att.singthong46@gmail.com</p>
                 </div>
                 <div class="info-item">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p>ที่อยู่: 123 ถนนบางบอน, กรุงเทพฯ, ประเทศไทย</p>
+                    <p>ที่อยู่: 169/293 ซ.เพิ่มสิน 15 แยก 18 แขวงคลองถนน เขตสายไหม กรุงเทพฯ 10220</p>
                 </div>
                 <div class="info-item">
                     <i class="fa-brands fa-facebook"></i>
-                    <p>Facebook: <a href="https://www.facebook.com/yourpage" target="_blank">facebook.com/yourpage</a>
-                    </p>
+                    <p>Facebook: <a href="https://www.facebook.com/ForgetMeNot2446/" target="_blank">Click</a></p>
                 </div>
                 <div class="info-item">
                     <i class="fa-brands fa-line"></i>
-                    <p>Line: <a href="https://line.me/ti/p/@yourlineid" target="_blank">@yourlineid</a></p>
+                    <p>Line: <a href="https://line.me/ti/p/rj7dw0TzJx" target="_blank">@attachai5557</a></p>
                 </div>
                 <div class="info-item">
                     <i class="fa-brands fa-linkedin"></i>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile"
-                            target="_blank">linkedin.com/in/yourprofile</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/attachai-singthong-614434322/" target="_blank">Click</a></p>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
 
@@ -479,11 +496,22 @@
 <!-- Body -->
 
 <!-- Footer -->
-<footer class="bg-light text-center py-4">
-    <p>&copy; 2024 Attachai Portfolio</p>
-    <p>ติดตามฉันได้ที่: <a href="#">Social Media Links</a></p>
+<footer id="contacts" class="footer">
+    <div class="container">
+        <p>&copy; 2024 Attachai Portfolio</p>
+        
+        <p>ติดตามฉันได้ที่:
+            <a href="https://www.facebook.com/ForgetMeNot2446/" target="_blank">Facebook</a> | 
+            <a href="https://line.me/ti/p/rj7dw0TzJx" target="_blank">Line</a> | 
+            <a href="https://www.linkedin.com/in/attachai-singthong-614434322/" target="_blank">LinkedIn</a>
+        </p>
+        
+        <p>โทร: 099 327 1546 | อีเมล: <a href="mailto:att.singthong46@gmail.com">att.singthong46@gmail.com</a></p>
+    </div>
 </footer>
 <!-- Footer -->
+
+
 
 <!-- AOS Initialization Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>

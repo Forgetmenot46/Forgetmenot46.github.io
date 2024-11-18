@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificate</title>
+    <link rel="icon" href="assests/img/certificate.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Modal Adjustment */
+        @media (max-width: 768px) {
+            .modal-dialog {
+                max-width: 100%;
+                margin: 0;
+            }
+            .modal-content {
+                height: 100vh;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">My Certificate</h5>
+                <span class="text-muted">ใบประกาศของ Attachai Singthong</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="gallery">
+          <!-- Each image has a data-toggle and data-target attribute to open the modal -->
+          <img src="assests/img/certificate/copilot.jpg" alt="Copilot Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/copilot.jpg', 'Copilot Certificate', 'เป็นการอบรมเรื่องของ Microsoft Azure AI Fundamentals : Generative AI ของวันที่  7 กันยายน 2567 ณ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี')">
+          <img src="assests/img/certificate/excel 2019.jpg" alt="Excel 2019 Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/excel 2019.jpg', 'Excel 2019 Certificate', 'Microsoft Office Specialist : Excel 2019 การรับรองความเชี่ยวชาญในการใช้โปรแกรม Microsoft Office')">
+          <img src="assests/img/certificate/PPT 2019.jpg" alt="PowerPoint 2019 Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/PPT 2019.jpg', 'PowerPoint 2019 Certificate', 'RMicrosoft Office Specialist : PowerPoint 2019 การรับรองความเชี่ยวชาญในการใช้โปรแกรม Microsoft Office')">
+          <img src="assests/img/certificate/Word 2019.jpg" alt="Word 2019 Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/Word 2019.jpg', 'Word 2019 Certificate', 'Microsoft Office Specialist : Word 2019 การรับรองความเชี่ยวชาญในการใช้โปรแกรม Microsoft Office')">
+          <img src="assests/img/certificate/PPT 365.jpg" alt="PowerPoint 365 Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/PPT 365.jpg', 'PowerPoint 365 Certificate', 'Microsoft Office Specialist : PowerPoint 365 การรับรองความเชี่ยวชาญในการใช้โปรแกรม Microsoft Office')">
+          <img src="assests/img/certificate/PPT 2016.jpg" alt="PowerPoint 2016 Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/PPT 2016.jpg', 'PowerPoint 2016 Certificate', 'Microsoft Office Specialist : PowerPoint 2016 การรับรองความเชี่ยวชาญในการใช้โปรแกรม Microsoft Office')">
+         
+          <img src="assests/img/certificate/MOS THAILAND COMPETITION.jpg" alt="mos olympic thailand competition" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/MOS THAILAND COMPETITION.jpg', 'Mos Olympic Thailand Competition', 'ใบประกาศเข้าร่วมการแข่งขัน Mos Olympic Thailand Competition 2024')">
+          
+          <img src="assests/img/certificate/Rmtt MOS THAILAND COMPETITION.jpg" alt="Rmutt mos olympic thailand competition" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/Rmtt MOS THAILAND COMPETITION.jpg', 'ใบประกาศเข้าร่วมงาน MOS Olympic Thailand Competition', 'ใบประกาศนักศึกษาได้เข้าร่วมการแข่งขันทักษะคอมพิวเตอร์ระดับประเทศ MOS Olympic Thailand Competition 2024 ')">
+          
+          <img src="assests/img/certificate/OrigamiAcademy_15950220393_241119_023514.jpg" alt="Origami Academy Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/OrigamiAcademy_15950220393_241119_023514.jpg', 'Certificate SAP','เข้าร่วมโครงการ พัฒนาศักยภาพนักศึกษาด้วยระบบ ERP และโปรแกรม SAP เพื่อเสริมสร้างทักษะ และเตรียมความพร้อมให้กับนักศึกษาด้านการจัดการทรัพยากรในองค์กรและการบริหารธุรกิจยุคดิจิทัล ')">
+          <img src="assests/img/certificate/Compatior.jpg" alt="Competitor Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/Compatior.jpg', 'Competitor Certificate', 'ใบประกาศผู้เข้าร่วมการแขงขัน Microsoft Office Specialist World Championship 2024 หมวดของ Microsoft Office PowerPoint (office 2019)')">
+          <img src="assests/img/certificate/1st place.jpg" alt="1st Place Certificate" data-toggle="modal" data-target="#imageModal" onclick="openModal('assests/img/certificate/1st place.jpg', '1st Place Certificate', 'ใบประกาศรางวัล ชนะเลิศอันดับที่่ 1 ของโปรแกม Microsoft Office PowerPoint (office 2019)',)">
+      </div>
+  </div>
+
+    <!-- Modal for viewing larger image and details -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Certificate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Column for the image -->
+                        <div class="col-md-6">
+                            <img id="modalImage" src="" alt="" class="img-fluid mb-3">
+                        </div>
+                        <!-- Column for the description -->
+                        <div class="col-md-6">
+                            <p id="modalDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the modal and set the image source and description
+        function openModal(imageSrc, imageAlt, description) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModalLabel').textContent = imageAlt;
+            document.getElementById('modalDescription').textContent = description;
+        }
+    </script>
+</body>
+
+</html>
