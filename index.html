@@ -15,10 +15,22 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <style>
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <!-- Header -->
@@ -39,10 +51,10 @@
                         <a class="nav-link mx-3 active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 active" aria-current="page" href="#">About</a>
+                        <a class="nav-link mx-3 active" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 active" href="#">Education</a>
+                        <a class="nav-link mx-3 active" href="#education">Education</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                         <a class="mx-5" href="index.html">
@@ -50,7 +62,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3 active" href="#">Portfolio</a>
+                        <a class="nav-link mx-3 active" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-3 active" href="#">Skills</a>
@@ -66,10 +78,11 @@
 <!-- Header -->
 
 <!-- Body -->
+
 <body style="background-color: #379777;">
     <div class="box1 d-flex flex-column justify-content-center align-items-center">
         <div class="row text-center">
-            <div class="col-sm" data-aos="flip-right" data-aos-delay="100">
+            <div class="col-sm" data-aos="flip-right" data-aos-delay="350">
                 <h1 class="title">Hello, my name is Attachai Singthong</h1>
                 <h2>
                     <span class="typed"></span>
@@ -77,12 +90,391 @@
             </div>
             <div class="col-sm" data-aos="fade-left">
                 <img src="assests/img/mypic.png" class="mypic img-fluid" alt="mypic">
+                <div id="about"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="box2">
+        <!-- About Section -->
+        <section class="about section">
+            <div class="container" data-aos="zoom-out-up" data-aos-duration="3000">
+                <div class="row gy-4 align-items-center">
+                    <!-- Left Column: Profile Picture -->
+                    <div class="col-md-6">
+                        <img style="width: 90%; 
+                                   height: auto; 
+                                   object-fit: cover;" src="assests/img/proflie_about.jpg"
+                            class="mypic img-fluid rounded" alt="mypic">
+                    </div>
+
+                    <!-- Right Column: About Me Text -->
+                    <div class="col-md-6">
+                        <div class="about-me">
+                            <h1 style="font-weight: bold;">เกี่ยวกับฉัน</h1>
+                            <p>
+                                สวัสดีครับ! ผมชื่ออรรถชัย สิงห์ทอง เกิดที่จังหวัดนครนายก แต่เติบโตที่สายไหม กรุงเทพฯ
+                                ผมมีความสนใจในสายงานไอที เช่น การออกแบบและพัฒนาเว็บไซต์ การจัดการกับระบบฐานข้อมูล
+                                รวมถึงการพัฒนาแอปพลิเคชันมือถือ ที่มุ่งหวังที่จะเรียนรู้และพัฒนาทักษะในด้านต่างๆ
+                                อย่างต่อเนื่อง เพื่อสามารถสร้างผลงานที่มีคุณค่าและเป็นประโยชน์แก่ผู้ใช้งาน
+                            </p>
+                            <p>
+                                เป้าหมายของผมคือการเรียนรู้และพัฒนาทักษะในการสร้างเว็บไซต์ที่ใช้งานได้จริง
+                                รวมถึงการเรียนรู้เกี่ยวกับระบบหลังบ้านและหน้าบ้าน
+                                เพื่อให้สามารถพัฒนาเว็บไซต์ที่สมบูรณ์และมีประสิทธิภาพ
+                                และนำไปประยุกต์ใช้ในการทำงานในอนาคตได้อย่างมีประสิทธิภาพ
+                            </p>
+
+                        </div>
+                        <div id="education"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="box3">
+        <div class="container">
+            <h1 style="font-weight: bold;" data-aos="zoom-in">ประวัติการศึกษา</h1>
+            <br>
+            <div class="timeline" data-aos="flip-left" data-aos-duration="1000">
+                <!-- ประถมศึกษา -->
+                <div class="timeline-item row">
+                    <div class="timeline-date col-md-2">2009 - 2015</div>
+                    <div class="timeline-content col-md-8 d-flex justify-content-between align-items-center">
+                        <div class="timeline-text">
+                            <h3>ประถมศึกษา</h3>
+                            <p>จบประถมศึกษา จาก โรงเรียนประเทืองทิพย์วิทยา<br>
+                                แผนการเรียน ปกติ</p>
+                        </div>
+                        <img class="timeline-logo" src="assests/img/pptlogo.png" alt="logo">
+                    </div>
+                </div>
+                <!-- มัธยมต้นและมัธยมปลาย -->
+                <div class="timeline-item row">
+                    <div class="timeline-date col-md-2">2016 - 2021</div>
+                    <div class="timeline-content col-md-8 d-flex justify-content-between align-items-center">
+                        <div class="timeline-text">
+                            <h3>มัธยมต้นและมัธยมปลาย</h3>
+                            <p>จบมัธยมต้นและมัธยมปลาย จาก โรงเรียนฤทธิยะวรรณาลัย<br>
+                                แผนการเรียน ธุรกิจ - เทคโนโลยี</p>
+                        </div>
+                        <img class="timeline-logo" src="assests/img/rwlogo.png" alt="logo">
+                    </div>
+                </div>
+                <!-- อุดมศึกษา -->
+                <div class="timeline-item row">
+                    <div class="timeline-date col-md-2">2022 - ปัจจุบัน</div>
+                    <div class="timeline-content col-md-8 d-flex justify-content-between align-items-center">
+                        <div class="timeline-text">
+                            <h3>อุดมศึกษา</h3>
+                            <p>กำลังศีกษาอยู่ที่
+                                มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี
+                                <br>
+                                คณะบริหารธุรกิจ สาขาระบบสารสนเทศ
+                                <br>
+                                GPA : 3.47
+                            </p>
+                        </div>
+                        <img class="timeline-logo" src="assests/img/Rmutt logo.png" alt="logo">
+
+                    </div>
+                    <div id="portfolio"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="box4">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 text-center">
+                <h1 style="font-weight: bold; color: #474547;" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">ผลงาน /
+                    ประสบการณ์</h1>
+            </div>
+        </div>
+
+        <div style="padding-top: 80px;" class="row justify-content-center">
+            <!-- Box 1 -->
+            <div class="col-12" data-aos="zoom-in-left">
+                <div class="content-box"
+                    style="border: 6px solid #f5f7f8; padding: 30px; border-radius: 10px; display: flex; align-items: center; width: 100%; height: 100%; max-height: 700px;">
+                    <!-- Carousel on the left -->
+                    <div class="carousel-container" style="flex: 1; padding-right: 15px;">
+                        <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 img-fluid " style="object-fit:cover; max-height: 500px;"
+                                        src="assests/img/timeline1.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: cover; max-height: 500px;"
+                                        src="assests/img/timeline2.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: cover; max-height: 500px;"
+                                        src="assests/img/timeline3.png" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls1" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text on the right -->
+                    <div class="text-container" style="flex: 1; padding-left: 15px;">
+                        <h1 style="color: #f5f7f8;">ทำโปรเจคเว็บไซต์ Mountain Camp</h1>
+                        <p>รับหน้าที่เป็น Project Manager และ Web Developer</p>
+                        <h3 style="font-weight: bold;">พัฒนาในส่วนของหน้าบ้าน และ หลังบ้านเล็กน้อย</h3>
+                        <a href="https://mountain-camp-n1ajq9n4t-forgetmenot46s-projects.vercel.app/?vercelToolbarCode=agnrUlM2vQJxP2m"
+                            target="_blank" class="btn-2">
+                            <span>เปิดเว็บไซต์ Mountain Camp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 80px;" class="row justify-content-center" data-aos="zoom-in-right">
+            <!-- Box 2 (Swapped sides) -->
+            <div class="col-12">
+                <div class="content-box"
+                    style="border: 6px solid #f5f7f8; padding: 30px; border-radius: 10px; display: flex; align-items: center; width: 100%; height: 100%; max-height: 700px;">
+                    <!-- Text on the left with added padding -->
+                    <div class="text-container" style="flex: 1; padding-left: 15px;">
+                        <h1 style="  color: #f5f7f8;">ได้รับรางวัลชนะเลิศอันดับ 1</h1>
+                        <p>ในหมวด PowerPoint 2019 จากการแข่งขัน</p>
+                        <h3 style="  font-weight: bold;">Microsoft Office Specialist World Championship 2024</h3>
+                        <p>แข่งขันที่เมือง Anaheim รัฐแคลิฟอร์เนีย ประเทศสหรัฐอเมริกา</p>
+                        <p>ระยะเวลาการแข่ง 28 – 31 กรกฎาคม 2567</p>
+                    </div>
+
+                    <!-- Carousel on the right -->
+                    <div class="carousel-container" style="flex: 1; padding-left: 15px;">
+                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/1722841167264.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/1725265016167.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/_5Iipvxb.jpeg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 80px;" class="row justify-content-center" data-aos="zoom-in-left">
+            <!-- Box 3 -->
+            <div class="col-12">
+                <div class="content-box"
+                    style="border: 6px solid #f5f7f8; padding: 30px; border-radius: 10px; display: flex; align-items: center; width: 100%; height: 100%; max-height: 700px;">
+                    <!-- Carousel on the left -->
+                    <div class="carousel-container" style="flex: 1; padding-right: 15px;">
+                        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/jai1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/jai2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/jai3.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 img-fluid" style="object-fit: contain; max-height: 500px;"
+                                        src="assests/img/jai4.jpg" alt="Fourth slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text on the right -->
+                    <div class="text-container" style="flex: 1; padding-left: 15px;">
+                        <h1 style=" color: #f5f7f8;">ทำโปรเจคแอปพลิเคชันชื่อว่า JaifulFood K6</h1>
+                        <p>ซึ่งเป็นแอปพลิเคชันที่เกี่ยวกับการแนะนำร้านอาหารในคลอง 6 ปทุมธานี</p>
+                        <h3 style=" font-weight: bold;">โดยรับหน้าที่เป็น Project Manager / App Developer</h3>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="box2">
-        <br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="box5">
+        <div class="skills-header">ทักษะและความสามารถ</div>
+
+        <div class="category">
+            <h3>การพัฒนาเว็บไซต์และโปรแกรม</h3>
+            <div class="skills-container">
+                <span class="skill"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill"><i class="fab fa-php"></i> PHP</span>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>การพัฒนาแอปพลิเคชัน</h3>
+            <div class="skills-container">
+                <span class="skill"><i class="fa-brands fa-flutter"></i> Flutter</span>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>การออกแบบและกราฟิก</h3>
+            <div class="skills-container">
+                <span class="skill"><i class="fab fa-figma"></i> Figma</span>
+                <span class="skill"><i class="fab fa-adobe"></i> Adobe Photoshop</span>
+                <span class="skill"><i class="fab fa-adobe"></i> Adobe Premiere Pro</span>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>ทักษะการใช้โปรแกรมสำนักงาน</h3>
+            <div class="skills-container">
+                <span class="skill">Microsoft Office Specialist Associate (365/2019)</span>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>การใช้เครื่องมือ AI</h3>
+            <div class="skills-container">
+                <span class="skill">ChatGPT</span>
+                <span class="skill">Copilot</span>
+                <span class="skill">Gemini</span>
+            </div>
+        </div>
     </div>
+
+
+
+    <div class="box6">
+        <div class="contact-header">ติดต่อฉัน</div>
+
+        <div class="row">
+            <!-- ส่วนข้อมูลติดต่อ -->
+
+            <!-- แบบฟอร์มติดต่อ -->
+            <div class="col-md-6 contact-form">
+                <h3>แบบฟอร์มติดต่อ</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key"
+                        value="b9959748-a899-4c5d-b8cc-03f9a8c9bcd6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">ชื่อ:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">อีเมล:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">ข้อความ:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning">ส่งข้อความ</button>
+                </form>
+            </div>
+            <div class="col-md-6 contact-info">
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>เบอร์โทร: +66 123 456 789</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>อีเมล: example@email.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>ที่อยู่: 123 ถนนบางบอน, กรุงเทพฯ, ประเทศไทย</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p>Facebook: <a href="https://www.facebook.com/yourpage" target="_blank">facebook.com/yourpage</a>
+                    </p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-line"></i>
+                    <p>Line: <a href="https://line.me/ti/p/@yourlineid" target="_blank">@yourlineid</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile"
+                            target="_blank">linkedin.com/in/yourprofile</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 <!-- Body -->
 
@@ -111,4 +503,5 @@
         });
     }
 </script>
+
 </html>
